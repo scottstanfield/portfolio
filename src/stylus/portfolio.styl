@@ -1,0 +1,141 @@
+@import 'jeet'
+@import 'rupture'
+rupture.mobile-cutoff = 620px
+
+//edit()
+
+jeet.gutter = 4
+debug = false
+breakpoint = 650px
+
+$gray = #595A5A
+$red = #CC0000
+
+#page
+  center(600px)
+  margin-top: 1em
+  +mobile()
+    margin-left: 1em
+
+html
+  font 1em/1.5 Open Sans, Cambria, Georgia, Times New Roman
+  +desktop()
+    font-size 1.1em
+    jeet.gutter = 9
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,hr
+  margin-bottom 1.2rem
+
+a
+  text-decoration none
+
+a:link, a:active
+  color #00759d
+  border-bottom dotted #bbbbbb 1px
+
+a:visited
+  color #006688
+  border-bottom dotted #cccccc 1px
+
+a:hover
+  color #000000
+  background rgba(66,66,66,0.2)
+  border-bottom dotted #000000 1px
+
+#heart
+  margin-top 0.5em
+  font-size 2.2em
+
+section
+  header
+    col(1/4)
+  nav
+    col(1/4)
+    footer
+      p
+        font-size 0.8em
+        margin-bottom 0
+          
+      margin-top 2em
+      border-top 1px solid #ccc
+      col(1/4)
+      stack()
+  aside
+    col(3/4)
+    +desktop()
+      background: lighten(blue, 20%) if debug
+    +tablet()
+      background: lighten(green, 20%) if debug
+    +mobile()
+      background: lighten(red, 20%) if debug
+  article
+    col(3/4)
+
+article
+  img
+    max-width: 100%
+    margin-bottom: 1em
+    +mobile()
+      col(1/2 3/4, cycle: 2)
+      stack()
+
+header
+  height 10rem
+  background: lighten(gray, 20%) if debug
+  img
+      height: 100%
+
+nav
+  border-top 1px solid #ccc
+  .markdown
+    +tablet()
+      display inline-block
+    +mobile()
+      display none
+  h3
+    margin-bottom 0.4rem
+  ul                            // hyperlink nav at normal scale
+    list-style: none
+    margin-left: 0
+    padding-left: 0
+    li:last-of-type
+      margin-bottom: 1em
+  select                        // the dropdown box at small scale
+    +desktop()
+      display none
+    +tablet()
+      display none
+    +mobile()
+      display inline-block
+
+  background: lighten(gray, 50%) if debug
+  h3
+    text-transform: lowercase;
+    font-variant: small-caps
+
+aside
+  border-top 4px solid #ccc
+  background: lighten(red, 45%) if debug
+  .left
+    col(1/2 3/4)
+    background: lighten(red, 65%) if debug
+    color: $red
+    font-size: 1.50em
+    vertical-align: top
+    padding-top: -0.3em
+    font-weight bold
+    +mobile()
+      stack()
+  .right
+    col(1/2 3/4)
+    background: lighten(orange, 65%) if debug
+    color: $gray
+    margin-top: 0.6em
+    +mobile()
+      stack()
+
+article
+  background: lighten(blue, 70%) if debug
+
+
+

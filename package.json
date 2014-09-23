@@ -1,0 +1,40 @@
+{
+  "name": "directions",
+  "version": "0.0.1",
+  "description": "Static directions to my house",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Scott Stanfield",
+  "license": "MIT",
+  "devDependencies": {
+    "beepbeep": "^1.2.0",
+    "colors": "^0.6.2",
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.10",
+    "gulp-cache": "^0.2.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-front-matter": "^1.0.0",
+    "gulp-header": "^1.1.0",
+    "gulp-jade": "^0.7.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-load-plugins": "^0.6.0",
+    "gulp-marked": "git://github.com/lmtm/gulp-marked.git",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-plumber": "^0.6.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-rev-all": "^0.6.4",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-size": "^1.0.0",
+    "gulp-stylus": "^1.3.0",
+    "gulp-uglify": "^1.0.0",
+    "gulp-webserver": "^0.7.0",
+    "marked": "^0.3.2",
+    "path": "^0.4.9",
+    "through2": "^0.6.1"
+  },
+  "dependencies": {
+    "express": "^4.8.7"
+  }
+}

@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Merienda+One|Raleway:400,300,200,100,500,600,700,800,900|Coming+Soon);
+
+body{
+  font-family:Raleway, Helvetica;
+  background-color: #EEE;
+  margin: 2em;
+}
+
+h1{
+  letter-spacing: -2.0px;
+  line-height:
+}
+
+h2{
+  color: gray;
+  letter-spacing: -2.0px;
+  line-height: .05%;
+}
+
+p{ 
+  text-align:
+}

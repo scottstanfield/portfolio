@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    article.articlePage!=content 
+    h1 Tags
+    ul
+        for tag in tags
+            li=tag
+        
